@@ -9,3 +9,17 @@ class Generic<T> {
         return this.t;
     }
 }
+
+class GenericTwo<K, V extends Number> {
+    private K key;
+    private V value;
+
+    public GenericTwo(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    void get() {
+        System.out.println(key+":"+value);
+    }
+}

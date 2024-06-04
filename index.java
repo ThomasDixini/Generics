@@ -7,5 +7,8 @@ public class index {
         i.set(10);
 
         System.out.println(s.get() + ": " + i.get());
+
+        GenericTwo<String, Double> g = new GenericTwo<String, Double>("Thomas", 2.0);
+        g.get();
     }
 }
