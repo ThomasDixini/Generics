@@ -23,3 +23,10 @@ class GenericTwo<K, V extends Number> {
         System.out.println(key+":"+value);
     }
 }
+
+class NewGeneric<X> {
+
+    <T> NewGeneric(T arg){
+        System.out.println(arg);
+    }
+}
