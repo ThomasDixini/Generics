@@ -1,3 +1,5 @@
+import java.util.List;
+
 class Generic<T> {
     T t;
 
@@ -7,6 +9,10 @@ class Generic<T> {
 
     T get() {
         return this.t;
+    }
+
+    void process(List<? extends Number> list) {
+        System.out.println(list.iterator());
     }
 }
 
@@ -25,7 +31,6 @@ class GenericTwo<K, V extends Number> {
 }
 
 class NewGeneric<X> {
-
     <T> NewGeneric(T arg){
         System.out.println(arg);
     }

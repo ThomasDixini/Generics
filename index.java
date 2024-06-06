@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class index {
     public static void main(String[] args) {
         Generic<String> s = new Generic<String>();
@@ -10,5 +13,9 @@ public class index {
 
         GenericTwo<String, Double> g = new GenericTwo<String, Double>("Thomas", 2.0);
         g.get();
+
+        List<Integer> n = new ArrayList<>();
+        n.add(1);
+        i.process(n);
     }
 }
